@@ -15,11 +15,17 @@ body {
 * {
   box-sizing: border-box;
   border: 1px solid black;
+  transition: opacity var(--transitionSpeedOpacity) ease,
+    visibility 0s ease var(--transitionSpeedOpacity);
 }
 
 /* hidden */
-.hidden {
-  visibility: hidden;
+.invisible {
+  opacity: 0 !important;
+}
+
+.notDisplayed {
+  display: none;
 }
 
 /* clickable */

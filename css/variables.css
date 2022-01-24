@@ -1,11 +1,13 @@
 /* variables */
 :root {
-  --transitionSpeed: 0s;
+  --transitionSpeed: 5s; /* will be reset in JS to 5s */
+  --transitionSpeedOpacity: 0s; /* will be reset in JS to 5s */
   --gapXS: 2px;
   --gapS: 5px;
   --gapM: 10px;
   --gapL: 15px;
 
+  /* will be reset in JS on mouse move */
   --backgroundX: 0px;
   --backgroundY: 0px;
 }
