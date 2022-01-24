@@ -33,7 +33,7 @@ const checkForErrors = () => {
 checkForErrors();
 
 // COUNTER
-const defaultZeros = '00000';
+const defaultZeros = defaultCounter.innerHTML;
 // initialize counter on timesupdate
 const initializeCounter = (audioId) => {
   const audio = audios[audioId];
@@ -113,6 +113,8 @@ const togglePlay = (audioId) => {
 };
 
 const play = (audioId) => {
+  // reset audio to start
+  audios[audioId].currentTime = 0;
   // play clicked audio
   audios[audioId].play();
   // set clicked audio state to play

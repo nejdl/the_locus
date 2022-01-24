@@ -2,14 +2,21 @@
 const body = document.querySelector('body');
 
 const moveBackground = (e) => {
+  let positionX = e.clientX;
+  let positionY = e.clientY;
+  if (e.touches.length > 0) {
+    positionX = e.touches[0].clientX;
+    positionY = e.touches[0].clientY;
+  }
   document.documentElement.style.setProperty(
     '--backgroundX',
-    -e.clientX + 'px'
+    -positionX + 'px'
   );
   document.documentElement.style.setProperty(
     '--backgroundY',
-    -e.clientY + 'px'
+    -positionY + 'px'
   );
 };
 
 body.addEventListener('mousemove', moveBackground);
+body.addEventListener('touchmove', moveBackground);

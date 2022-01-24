@@ -7,7 +7,24 @@
   --gapM: 10px;
   --gapL: 15px;
 
+  /* font */
+  --fontSizeM: 20px;
+  --fontSizeS: 12px;
+
+  /* icons */
+  --backgroundImageSize: 10px;
+
+  /* color */
+  --yellow: #ebff99;
+
   /* will be reset in JS on mouse move */
   --backgroundX: 0px;
   --backgroundY: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --fontSizeM: 11px;
+    --fontSizeS: 11px;
+  }
 }

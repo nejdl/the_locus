@@ -10,9 +10,30 @@
 }
 
 .playButton {
-  background-color: green;
+  display: flex;
+  padding-left: var(--gapM);
 }
 
-.playButton.paused {
-  background-color: red;
+.playButton .icon {
+  width: var(--backgroundImageSize);
+  height: var(--backgroundImageSize);
+  margin: 6px 2px 3px 3px;
+  background-image: url(../assets/icon/play.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .playButton {
+    display: flex;
+    padding-left: var(--gapS);
+  }
+
+  .playButton .icon {
+    margin: 0 1px 2px 2px;
+  }
+}
+
+.playButton.paused .icon {
+  background-image: url(../assets/icon/pause.svg);
 }
