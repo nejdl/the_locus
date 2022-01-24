@@ -1,0 +1,42 @@
+/* text */
+#textContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text {
+  margin: var(--gapS);
+}
+
+#description {
+  margin: var(--gapS);
+  flex: 0 1 calc(50% - (var(--gapS) * 3));
+}
+
+#centeredText {
+  display: flex;
+}
+
+#centeredText .text {
+  flex: 1 1 calc(100% / 3);
+}
+
+#title {
+  display: flex;
+}
+
+#disclaimer {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #disclaimer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+  }
+}

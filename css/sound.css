@@ -1,0 +1,18 @@
+/* sound */
+#sound {
+  display: flex;
+  text-align: right;
+  margin-left: auto;
+}
+
+#sound .playButton:first-child {
+  margin-left: auto;
+}
+
+.playButton {
+  background-color: green;
+}
+
+.playButton.paused {
+  background-color: red;
+}

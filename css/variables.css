@@ -1,0 +1,11 @@
+/* variables */
+:root {
+  --transitionSpeed: 0s;
+  --gapXS: 2px;
+  --gapS: 5px;
+  --gapM: 10px;
+  --gapL: 15px;
+
+  --backgroundX: 0px;
+  --backgroundY: 0px;
+}

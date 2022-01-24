@@ -1,0 +1,35 @@
+/* global */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: red;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+/* hidden */
+.hidden {
+  visibility: hidden;
+}
+
+/* clickable */
+.clickable {
+  cursor: pointer;
+}
+
+@media screen and (hover: hover) {
+  .clickable:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

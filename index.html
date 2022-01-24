@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>title</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/images.css" />
+    <link rel="stylesheet" href="./css/text.css" />
+    <link rel="stylesheet" href="./css/sound.css" />
+  </head>
+  <body>
+    <!-- images -->
+    <div id="imageContainer">
+      <div id="image0" class="image"></div>
+      <div id="image1" class="image"></div>
+      <div id="image2" class="image"></div>
+      <div id="image3" class="image"></div>
+      <div id="image4" class="image"></div>
+      <div id="image5" class="image"></div>
+    </div>
+
+    <!-- UI -->
+    <div id="textContainer">
+      <!-- description -->
+      <div id="description" class="text hidden clickable">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </div>
+
+      <!-- middle -->
+      <div id="centeredText">
+        <!-- title -->
+        <div id="title" class="text clickable">
+          The Locus
+          <div id="counter">00000000</div>
+        </div>
+
+        <!-- disclaimer -->
+        <div id="disclaimer" class="text">
+          listen to headphones for immersive experience
+        </div>
+
+        <!-- sound -->
+        <div id="sound" class="text">
+          <!-- 0 -->
+          <div id="playButton0" class="playButton clickable paused">1</div>
+          <audio
+            id="audio0"
+            src="./assets/audio/audio0.mp3"
+            preload="auto"
+          ></audio>
+          <!-- 1 -->
+          <div id="playButton1" class="playButton clickable paused">2</div>
+          <audio
+            id="audio1"
+            src="./assets/audio/audio1.mp3"
+            preload="auto"
+          ></audio>
+          <!-- 2 -->
+          <div id="playButton2" class="playButton clickable paused">3</div>
+          <audio
+            id="audio2"
+            src="./assets/audio/audio0.mp3"
+            preload="auto"
+          ></audio>
+          <!-- 3 -->
+          <div id="playButton3" class="playButton clickable paused">4</div>
+          <audio
+            id="audio3"
+            src="./assets/audio/audio1.mp3"
+            preload="auto"
+          ></audio>
+          <!-- 4 -->
+          <div id="playButton4" class="playButton clickable paused">5</div>
+          <audio
+            id="audio4"
+            src="./assets/audio/audio0.mp3"
+            preload="auto"
+          ></audio>
+          <!-- 5 -->
+          <div id="playButton5" class="playButton clickable paused">6</div>
+          <audio
+            id="audio5"
+            src="./assets/audio/audio1.mp3"
+            preload="auto"
+          ></audio>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/movingBackground.js"></script>
+  <script src="./js/toggleDescription.js"></script>
+  <script src="./js/playAndPauseAudio.js"></script>
+</html>
