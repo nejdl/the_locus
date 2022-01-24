@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 const moveBackground = (e) => {
   let positionX = e.clientX;
   let positionY = e.clientY;
-  if (e.touches.length > 0) {
+  if (e.touches) {
     positionX = e.touches[0].clientX;
     positionY = e.touches[0].clientY;
   }

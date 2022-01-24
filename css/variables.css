@@ -16,6 +16,8 @@
 
   /* color */
   --yellow: #ebff99;
+  --black: black;
+  --grey: #cccccc;
 
   /* will be reset in JS on mouse move */
   --backgroundX: 0px;
