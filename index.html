@@ -12,17 +12,24 @@
     <link rel="stylesheet" href="./css/images.css" />
     <link rel="stylesheet" href="./css/text.css" />
     <link rel="stylesheet" href="./css/sound.css" />
-    <link rel="stylesheet" href="./css/splash.css" />
+    <link rel="stylesheet" href="./css/intro.css" />
+    <link rel="stylesheet" href="./css/logo.css" />
+    <link rel="stylesheet" href="./css/disclaimer.css" />
   </head>
   <body>
-    <!-- intro -->
-    <div id="splash">
-      <img id="splashlogo" src="assets/img/logo.png" alt="logo" />
+    <!-- headphone disclaimer -->
+    <div id="disclaimer" class="text">
+      listen with headphones for an immersive experience
     </div>
-    <div id="splashImg" class=""></div>
+
+    <!-- logo -->
+    <img id="logo" src="./assets/img/logo.png" alt="logo" />
+
+    <!-- intro -->
+    <div id="intro"></div>
 
     <!-- images -->
-    <div id="imageContainer">
+    <div id="imageContainer" class="invisible">
       <div id="image0" class="image invisible"></div>
       <div id="image1" class="image invisible"></div>
       <div id="image2" class="image invisible"></div>
@@ -32,9 +39,9 @@
     </div>
 
     <!-- UI -->
-    <div id="textContainer">
+    <div id="textContainer" class="invisible">
       <!-- description -->
-      <div id="description" class="text invisible">
+      <div id="description" class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -45,7 +52,7 @@
       </div>
 
       <!-- middle -->
-      <div id="centeredText" class="invisible">
+      <div id="centeredText">
         <!-- title -->
         <div id="title" class="text clickable">
           the:locus:
@@ -56,11 +63,6 @@
           <div id="counter4" class="counter notDisplayed"></div>
           <!-- <div id="counter5" class="counter notDisplayed"></div> -->
           <div id="defaultCounter">0000000</div>
-        </div>
-
-        <!-- disclaimer -->
-        <div id="disclaimer" class="text">
-          listen with headphones for an immersive experience
         </div>
 
         <!-- sound -->
@@ -92,7 +94,7 @@
           </div>
           <audio
             id="audio2"
-            src="./assets/audio/audio0.mp3"
+            src="./assets/audio/audio2.mp3"
             preload="auto"
           ></audio>
           <!-- 3 -->
@@ -112,7 +114,7 @@
           </div>
           <audio
             id="audio4"
-            src="./assets/audio/audio0.mp3"
+            src="./assets/audio/audio2.mp3"
             preload="auto"
           ></audio>
           <!-- 5 -->
@@ -130,9 +132,9 @@
     </div>
   </body>
 
-  <script src="./js/splashPage.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/movingBackground.js"></script>
   <script src="./js/toggleDescription.js"></script>
   <script src="./js/playAndPauseAudio.js"></script>
+  <script src="./js/intro.js"></script>
 </html>

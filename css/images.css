@@ -19,22 +19,22 @@
 }
 
 /* intro */
-#splashImg {
+/* #splashImg {
   background-image: url(../assets/img/image0.jpg);
-}
+} */
 
 /* track-images */
 #image0 {
-  background-image: url(../assets/img/image1.jpg);
+  background-image: url(../assets/img/image0.jpg);
 }
 #image1 {
-  background-image: url(../assets/img/image2.jpg);
+  background-image: url(../assets/img/image1.jpg);
 }
 #image2 {
-  background-image: url(../assets/img/image3.jpg);
+  background-image: url(../assets/img/image2.jpg);
 }
 #image3 {
-  background-image: url(../assets/img/image4.jpg);
+  background-image: url(../assets/img/image3.jpg);
 }
 #image4 {
   background-image: url(../assets/img/image4.jpg);

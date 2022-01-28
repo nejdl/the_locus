@@ -34,6 +34,11 @@
   display: flex;
   max-width: 100%;
   overflow: hidden;
+  justify-content: space-between;
+}
+
+#centeredText .text {
+  flex: 0 0 auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -42,32 +47,6 @@
   }
 }
 
-#centeredText .text {
-  flex: 1 1 calc(100% / 3);
-}
-
-@media screen and (max-width: 600px) {
-  #centeredText {
-    justify-content: space-between;
-  }
-  #centeredText .text {
-    flex: 0 0 auto;
-  }
-}
-
 #title {
   display: flex;
-}
-
-#disclaimer {
-  text-align: center;
-}
-
-@media screen and (max-width: 900px) {
-  #disclaimer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    min-width: 100vw;
-  }
 }

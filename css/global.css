@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   margin: 0;
 
-  background-color: var(--black);
+  background-color: var(--backgroundColor);
   color: var(--spotColor);
 
   font-family: 'nestregular';
@@ -22,8 +22,7 @@ body {
 * {
   /* border: 1px solid black; */
   box-sizing: border-box;
-  transition: opacity var(--transitionSpeedOpacity) ease,
-    visibility 0s ease var(--transitionSpeedOpacity);
+  transition: opacity var(--transitionSpeedOpacity) ease;
 }
 
 /* no text selection  */
@@ -61,7 +60,7 @@ body {
 }
 
 .notDisplayed {
-  display: none;
+  display: none !important;
 }
 
 /* clickable */

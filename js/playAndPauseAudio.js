@@ -44,6 +44,14 @@ const initializeCounter = (audioId) => {
     () => {
       // set current time to active counter
       counter.innerHTML = formatCountdown(audio);
+
+      // press pause on audio when track has ended
+      const currentTime = audio.currentTime;
+      const totalTime = audio.duration;
+      console.log(currentTime, totalTime);
+      if (currentTime === totalTime) {
+        pause(audioId);
+      }
     },
     false
   );
@@ -112,6 +120,8 @@ const togglePlay = (audioId) => {
   }
 };
 
+// play / pause specific audio
+// 0 = first audio on page, 1 = second audio ...
 const play = (audioId) => {
   // reset audio to start
   audios[audioId].currentTime = 0;
@@ -150,6 +160,4 @@ const disclaimer = document.getElementById('disclaimer');
 const hideDisclaimer = () => {
   firstTimeAudioPlay = false;
   disclaimer.classList.add('invisible');
-
 };
-

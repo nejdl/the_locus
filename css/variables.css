@@ -17,9 +17,9 @@
   --backgroundImageSize: 10px;
 
   /* color */
-  --black: rgb(5, 4, 4);
+  --backgroundColor: rgb(5, 4, 4);
   --grey: #cccccc;
-  --spotColor: #c8ff00;
+  --spotColor: #00f219;
 
   /* will be reset in JS on mouse move */
   --backgroundX: 0px;
