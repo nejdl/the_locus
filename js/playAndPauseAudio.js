@@ -150,4 +150,6 @@ const disclaimer = document.getElementById('disclaimer');
 const hideDisclaimer = () => {
   firstTimeAudioPlay = false;
   disclaimer.classList.add('invisible');
+
 };
+

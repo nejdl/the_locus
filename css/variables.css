@@ -8,22 +8,25 @@
   --gapL: 15px;
 
   /* font */
-  --fontSizeM: 20px;
-  --fontSizeS: 12px;
+  /* --fontSizeM: 18px;
+  --fontSizeS: 14px; */
+  --fontSizeM: 16px;
+  --fontSizeS: 16px;
 
   /* icons */
   --backgroundImageSize: 10px;
 
   /* color */
-  --yellow: #ebff99;
-  --black: black;
+  --black: rgb(5, 4, 4);
   --grey: #cccccc;
+  --spotColor: #c8ff00;
 
   /* will be reset in JS on mouse move */
   --backgroundX: 0px;
   --backgroundY: 0px;
 }
 
+/* for mobile */
 @media screen and (max-width: 600px) {
   :root {
     --fontSizeM: 11px;

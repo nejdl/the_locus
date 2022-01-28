@@ -17,8 +17,9 @@
 .playButton .icon {
   width: var(--backgroundImageSize);
   height: var(--backgroundImageSize);
-  margin: 6px 2px 3px 3px;
-  background-image: url(../assets/icon/play.svg);
+  /* margin: 6px 2px 3px 3px; */
+  margin: 4px 2px 3px 3px;
+  background-image: url(../assets/icon/pause.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -35,5 +36,5 @@
 }
 
 .playButton.paused .icon {
-  background-image: url(../assets/icon/pause.svg);
+  background-image: url(../assets/icon/play.svg);
 }

@@ -12,8 +12,15 @@
     <link rel="stylesheet" href="./css/images.css" />
     <link rel="stylesheet" href="./css/text.css" />
     <link rel="stylesheet" href="./css/sound.css" />
+    <link rel="stylesheet" href="./css/splash.css" />
   </head>
   <body>
+    <!-- intro -->
+    <div id="splash">
+      <img id="splashlogo" src="assets/img/logo.png" alt="logo" />
+    </div>
+    <div id="splashImg" class=""></div>
+
     <!-- images -->
     <div id="imageContainer">
       <div id="image0" class="image invisible"></div>
@@ -21,7 +28,7 @@
       <div id="image2" class="image invisible"></div>
       <div id="image3" class="image invisible"></div>
       <div id="image4" class="image invisible"></div>
-      <div id="image5" class="image invisible"></div>
+      <!-- <div id="image5" class="image invisible"></div> -->
     </div>
 
     <!-- UI -->
@@ -38,7 +45,7 @@
       </div>
 
       <!-- middle -->
-      <div id="centeredText">
+      <div id="centeredText" class="invisible">
         <!-- title -->
         <div id="title" class="text clickable">
           the:locus:
@@ -47,7 +54,7 @@
           <div id="counter2" class="counter notDisplayed"></div>
           <div id="counter3" class="counter notDisplayed"></div>
           <div id="counter4" class="counter notDisplayed"></div>
-          <div id="counter5" class="counter notDisplayed"></div>
+          <!-- <div id="counter5" class="counter notDisplayed"></div> -->
           <div id="defaultCounter">0000000</div>
         </div>
 
@@ -109,7 +116,7 @@
             preload="auto"
           ></audio>
           <!-- 5 -->
-          <div id="playButton5" class="playButton clickable paused">
+          <!-- <div id="playButton5" class="playButton clickable paused">
             <div class="icon"></div>
             06
           </div>
@@ -117,12 +124,13 @@
             id="audio5"
             src="./assets/audio/audio1.mp3"
             preload="auto"
-          ></audio>
+          ></audio> -->
         </div>
       </div>
     </div>
   </body>
 
+  <script src="./js/splashPage.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/movingBackground.js"></script>
   <script src="./js/toggleDescription.js"></script>

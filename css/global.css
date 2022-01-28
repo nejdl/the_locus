@@ -11,7 +11,7 @@ body {
   margin: 0;
 
   background-color: var(--black);
-  color: var(--yellow);
+  color: var(--spotColor);
 
   font-family: 'nestregular';
   font-size: var(--fontSizeM);

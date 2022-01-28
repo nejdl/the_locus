@@ -10,11 +10,11 @@ const moveBackground = (e) => {
   }
   document.documentElement.style.setProperty(
     '--backgroundX',
-    -positionX + 'px'
+    -positionX  + 'px'
   );
   document.documentElement.style.setProperty(
     '--backgroundY',
-    -positionY + 'px'
+    -positionY  + 'px'
   );
 };
 
