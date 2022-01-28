@@ -48,7 +48,6 @@ const initializeCounter = (audioId) => {
       // press pause on audio when track has ended
       const currentTime = audio.currentTime;
       const totalTime = audio.duration;
-      console.log(currentTime, totalTime);
       if (currentTime === totalTime) {
         pause(audioId);
       }
